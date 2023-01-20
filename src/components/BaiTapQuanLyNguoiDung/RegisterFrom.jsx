@@ -203,7 +203,14 @@ export default function RegisterFrom() {
             <button
               onClick={() => {
                 setForm({
-                  values: "",
+                  values: {
+                    userName: "",
+                    fullName: "",
+                    password: "",
+                    phoneNumber: "",
+                    email: "",
+                    type: "Client",
+                  },
                 });
               }}
               type="reset"
